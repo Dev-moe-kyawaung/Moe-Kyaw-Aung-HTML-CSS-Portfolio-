@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dev Moe Kyawaung - Full Stack Developer Portfolio. Explore my projects and get in touch.">
+    <meta name="keywords" content="Developer, Portfolio, React, Node.js, Full Stack">
+    <meta name="author" content="Dev Moe Kyawaung">
+    <meta name="theme-color" content="#9333ea">
+    <meta property="og:title" content="Dev Moe Kyawaung - Portfolio">
+    <meta property="og:description" content="Full Stack Developer | UI/UX Designer | Tech Innovator">
+    <meta property="og:image" content="https://gravatar.com/avatar/moekyawaung2026?s=300&d=identicon">
+    <meta property="og:url" content="https://dev-moe-kyawaung.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Dev Moe Kyawaung | Full Stack Developer</title>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="js/script.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" as="style">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%239333ea'>✨</text></svg>">
+    
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+
+    <!-- Header Navigation -->
+    <header class="fixed-header" role="banner">
+        <div class="container">
+            <nav class="navbar" role="navigation">
+                <div class="nav-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">✨</span>
+                        <span class="logo-text">Dev Moe Kyawaung</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <ul class="nav-menu desktop-menu" id="desktop-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li>
+                        <button id="theme-toggle" class="btn-theme" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <span class="theme-text">Dark</span>
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <!-- Mobile Navigation -->
+                <ul class="nav-menu mobile-menu" id="mobile-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero" role="region" aria-label="Hero section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title animate-slideInDown">
+                        <span class="title-line">Dev Moe Kyawaung</span>
+                    </h1>
+                    <p class="hero-subtitle animate-slideInUp" style="animation-delay: 0.2s;">
+                        Full Stack Developer | UI/UX Designer | Tech Innovator
+                    </p>
+                    <p class="hero-description animate-slideInUp" style="animation-delay: 0.3s;">
+                        Crafting beautiful, responsive web applications with modern technologies
+                    </p>
+                    <div class="hero-buttons animate-slideInUp" style="animation-delay: 0.4s;">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-eye"></i> View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-scroll" aria-hidden="true">
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" role="region" aria-label="About section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">About Me</h2>
+                
+                <div class="about-content">
+                    <div class="about-image" data-aos="fade-right">
+                        <div class="image-wrapper">
+                            <img 
+                                src="https://gravatar.com/avatar/moekyawaung2026?s=300&d=identicon" 
+                                alt="Dev Moe Kyawaung profile picture" 
+                                class="profile-img"
+                                loading="lazy"
+                            >
+                            <div class="image-border"></div>
+                        </div>
+                    </div>
+
+                    <div class="about-text" data-aos="fade-left">
+                        <p class="about-description">
+                            I'm a passionate full-stack developer with 5+ years of experience in building modern web applications. 
+                            With expertise in React, Node.js, and cloud technologies, I transform ideas into elegant digital solutions.
+                        </p>
+
+                        <p class="about-description">
+                            I believe in writing clean, maintainable code and creating exceptional user experiences. 
+                            My approach combines technical excellence with creative problem-solving to deliver impactful results.
+                        </p>
+
+                        <p class="about-description">
+                            When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+                            or sharing knowledge with the developer community.
+                        </p>
+
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h3 class="stat-number">50+</h3>
+                                <p class="stat-label">Projects Completed</p>
+                            </div>
+                            <div class="stat">
+                                <h3 class="stat-number">30+</h3>
+                                <p class="stat-label">Happy Clients</p>
+                            </div>
+                            <div class="stat">
+                                <h3 class="stat-number">5+</h3>
+                                <p class="stat-label">Years Experience</p>
+                            </div>
+                        </div>
+
+                        <div class="about-links">
+                            <a href="https://github.com/Dev-moe-kyawaung" target="_blank" rel="noopener noreferrer" class="link-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://gravatar.com/moekyawaung2026" target="_blank" rel="noopener noreferrer" class="link-btn">
+                                <i class="fab fa-gravatar"></i> Gravatar
+                            </a>
+                            <a href="https://gravatar.com/moekyawaung13721" target="_blank" rel="noopener noreferrer" class="link-btn">
+                                <i class="fas fa-user-circle"></i> Profile 2
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills" role="region" aria-label="Skills section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Skills & Expertise</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-category" data-aos="fade-up">
+                        <h3 class="skill-category-title">Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Redux</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" style="animation-delay: 0.1s;">
+                        <h3 class="skill-category-title">Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Ruby on Rails</span>
+                            <span class="skill-tag">GraphQL</span>
+                            <span class="skill-tag">REST API</span>
+                            <span class="skill-tag">Microservices</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" style="animation-delay: 0.2s;">
+                        <h3 class="skill-category-title">Databases</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">Elasticsearch</span>
+                            <span class="skill-tag">DynamoDB</span>
+                            <span class="skill-tag">Neo4j</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" style="animation-delay: 0.3s;">
+                        <h3 class="skill-category-title">Tools & DevOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects" role="region" aria-label="Projects section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects will be dynamically loaded here -->
+                </div>
+
+                <div class="projects-footer" data-aos="fade-up">
+                    <p>Want to see more? <a href="https://github.com/Dev-moe-kyawaung?tab=repositories" target="_blank" rel="noopener noreferrer">Visit my GitHub</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" role="region" aria-label="Contact section">
+            <div class="container">
+                <h2 class="section-title light" data-aos="fade-up">Let's Work Together</h2>
+                <p class="contact-subtitle" data-aos="fade-up" style="animation-delay: 0.1s;">
+                    I'm always interested in hearing about new projects and opportunities.
+                </p>
+
+                <div class="contact-content">
+                    <div class="contact-methods" data-aos="fade-right">
+                        <h3>Get In Touch</h3>
+                        
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:moekyawaung@example.com">moekyawaung@example.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+95912345678">+95 (9) 1234 5678</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Myanmar (Burma)</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/Dev-moe-kyawaung" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://gravatar.com/moekyawaung2026" target="_blank" rel="noopener noreferrer" aria-label="Gravatar" class="social-link">
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form" data-aos="fade-left">
+                        <h3>Send Me a Message</h3>
+
+                        <div class="form-group">
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                placeholder="Your Name" 
+                                required
+                                aria-label="Your name"
+                            >
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Your Email" 
+                                required
+                                aria-label="Your email"
+                            >
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject" 
+                                placeholder="Subject" 
+                                required
+                                aria-label="Message subject"
+                            >
+                            <span class="form-error" id="subject-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                placeholder="Your Message" 
+                                rows="5" 
+                                required
+                                aria-label="Your message"
+                            ></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter" role="region" aria-label="Newsletter subscription">
+            <div class="container">
+                <h2 data-aos="fade-up">Subscribe to My Newsletter</h2>
+                <p data-aos="fade-up" style="animation-delay: 0.1s;">Get the latest updates on web development trends and project announcements</p>
+                
+                <form class="newsletter-form" id="newsletter-form" data-aos="fade-up" style="animation-delay: 0.2s;">
+                    <input 
+                        type="email" 
+                        placeholder="Enter your email" 
+                        required
+                        aria-label="Your email for newsletter"
+                    >
+                    <button type="submit" class="btn btn-small">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dev Moe Kyawaung</h3>
+                    <p>Full Stack Developer & Web Designer</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="footer-socials">
+                        <a href="https://github.com/Dev-moe-kyawaung" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dev Moe Kyawaung. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart" style="color: #ec4899;"></i> using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
