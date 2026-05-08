@@ -1,0 +1,35 @@
+# Site Configuration
+title: Dev Moe Kyawaung
+description: Full Stack Developer Portfolio
+url: https://dev-moe-kyawaung.github.io
+author: Dev Moe Kyawaung
+
+# Build Configuration
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO
+twitter:
+  username: moekyawaung
+facebook:
+  app_id: 
+  publisher: 
+
+google_site_verification: 
+
+# Analytics
+google_analytics: 
+
+# Exclude from build
+exclude:
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - package.json
+  - package-lock.json
